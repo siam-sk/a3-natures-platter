@@ -4,20 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A3 Nature's Platter</title>
+    <title>Nature's Platter</title>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <!-- Tailwind CSS cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- Font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CSS cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fontFamily: {
+                            sora : ['Sora', 'san-serif']
+                        },
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-
+<body class="font-sora max-w-screen-2xl mx-auto">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav>
+            <!-- Mobile Nav Bar -->
+            <div class="flex items-center justify-between p-2 border-b-2 border-b-green-300 mb-12 lg:hidden">
+                <img src="./assets/favicon.png" alt="logo-mobile">
+                <i class="fa-solid fa-bars text-xl text-green-400"></i>
+            </div>
+            <!-- Desktop Nav Bar -->
+            <div class="hidden lg:flex justify-between items-center px-32 py-2 mb-20">
+                <div>
+                    <img src="./assets/logo-header.png" alt="logo-header">
+                </div>
+                <ul class="flex space-x-4">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+                <div class="space-x-3 flex items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="space-x-1">
+                        <button class="border border-green-600 px-4 py-1 rounded-md">Login</button>
+                        <button class="border border-green-600 bg-green-600 px-4 py-1 rounded-md text-white">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center">
+            <h1 class="text-5xl mb-4 lg:mb-8">Freshness <span class="text-green-600">You Can <br> Count On</span>, Prices You’ll Love!</h1>
+            <p class="mb-4 lg:mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <img class="h-96 mx-auto lg:h-1/5" src="./assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
