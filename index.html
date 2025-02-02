@@ -20,11 +20,9 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        fontFamily: {
+                    fontFamily: {
                             sora : ['Sora', 'san-serif']
                         },
-                    }
                 }
             }
         }
@@ -44,7 +42,7 @@
                 <div>
                     <img src="./assets/logo-header.png" alt="logo-header">
                 </div>
-                <ul class="flex space-x-4">
+                <ul class="flex text-gray-700 space-x-4">
                     <li>Product</li>
                     <li>Services</li>
                     <li>Contact us</li>
@@ -60,12 +58,34 @@
             </div>
         </nav>
         <div class="text-center">
-            <h1 class="text-5xl mb-4 lg:mb-8">Freshness <span class="text-green-600">You Can <br> Count On</span>, Prices You’ll Love!</h1>
-            <p class="mb-4 lg:mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
-            <img class="h-96 mx-auto lg:h-1/5" src="./assets/hero-vegetables.png" alt="">
+            <h1 class="text-5xl font-semibold mb-4 lg:mb-8">Freshness <span class="text-green-600">You Can <br> Count On</span>, Prices You’ll Love!</h1>
+            <p class="mb-4 text-gray-700 lg:mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <div class="w-[493px] mx-auto overflow-hidden lg:w-[950px]""><img class="w-full" src="./assets/hero-vegetables.png" alt="banner-image"></div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- Services Section -->
+        <section class="px-4 lg:px-32">
+            <h2 class="pb-8 pt-12 text-2xl text-green-600 font-medium lg:pb-12">Services</h2>
+            <div class="lg:flex gap-6">
+                <div class="bg-[#EFEBE3] p-7 rounded-lg flex flex-col items-center mb-5">
+                    <div class="mb-5 bg-white rounded-full w-32 h-32 flex justify-center items-center"><img class="w-2/3" src="./assets/service.png" alt=""></div>
+                    <h3 class="text-xl font-medium mb-3">24/7 Services</h3>
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-[#EFEBE3] p-7 rounded-lg flex flex-col items-center mb-5">
+                    <div class="mb-5 bg-white rounded-full w-32 h-32 flex justify-center items-center"><img class="w-2/3" src="./assets/delivery.png" alt=""></div>
+                    <h3 class="text-xl font-medium mb-3">24/7 Services</h3>
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                <div class="bg-[#EFEBE3] p-7 rounded-lg flex flex-col items-center mb-5">
+                    <div class="mb-5 bg-white rounded-full w-32 h-32 flex justify-center items-center"><img class="w-2/3" src="./assets/healthy.png" alt=""></div>
+                    <h3 class="text-xl font-medium mb-3">24/7 Services</h3>
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
